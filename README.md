@@ -2,7 +2,17 @@
 
 A lightweight MoveIt 2 learning project using the Franka Panda robot in RViz. It demonstrates joint-space goal planning, pose goal planning, PlanningScene collision objects, and OMPL obstacle avoidance on Ubuntu 24.04, ROS 2 Jazzy, MoveIt 2, RViz2, and `ros2_control` fake hardware.
 
+This repository is a learning / skill-validation demo rather than a custom production MoveIt 2 stack.
+
 The repository contains only the learning/demo code built on top of ROS 2, MoveIt 2, and the official Panda resources. MoveIt, ROS 2, and Panda resources are provided by their respective projects.
+
+## Demo
+
+The main visual demo is obstacle avoidance with a PlanningScene collision object:
+
+![Obstacle avoidance demo](media/obstacle_avoidance_demo.gif)
+
+Additional recordings are stored in [media/](media/).
 
 ## Features
 
@@ -30,9 +40,7 @@ flowchart TD
 
 For more detail, see [docs/architecture.md](docs/architecture.md).
 
-## Demo
-
-Demo recordings are stored in [media/](media/).
+## Additional Demo Recordings
 
 ### Joint Goal
 
@@ -47,8 +55,6 @@ Demo recordings are stored in [media/](media/).
 `pose_goal_demo` shows how a Cartesian end-effector pose target is converted by MoveIt into a valid robot state before motion planning.
 
 ### Obstacle Avoidance
-
-![Obstacle avoidance demo](media/obstacle_avoidance_demo.gif)
 
 [MP4](media/obstacle_avoidance_demo.mp4)
 
